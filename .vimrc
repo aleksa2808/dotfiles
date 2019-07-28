@@ -28,7 +28,7 @@ Plug 'airblade/vim-gitgutter'
 " better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 " code syntax linting
-Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 " easy code formatting
 Plug 'Chiel92/vim-autoformat'
 
@@ -46,18 +46,9 @@ filetype indent plugin on
 syntax on
 
 let g:airline_powerline_fonts = 1
+
 let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden=1
-
-" syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " close vim if only nerdtree remains
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
