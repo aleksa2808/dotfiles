@@ -5,6 +5,9 @@
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
+" Faster response time (default is 4000(ms))
+set updatetime=300
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
