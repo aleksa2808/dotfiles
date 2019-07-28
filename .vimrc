@@ -25,6 +25,8 @@ Plug 'tpope/vim-surround'
 " . functionality for non-native commands
 Plug 'tpope/vim-repeat'
 
+" program tag explorer
+Plug 'majutsushi/tagbar'
 " git diff sidebar indicators
 Plug 'airblade/vim-gitgutter'
 " better syntax highlighting
@@ -58,6 +60,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 noremap <F3> :Autoformat<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 "------------------------------------------------------------
 " Must have options {{{1
