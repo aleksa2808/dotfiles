@@ -1,15 +1,5 @@
-" URL: http://vim.wikia.com/wiki/Example_vimrc
-" Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" Description: A minimal, but feature rich, example .vimrc. If you are a
-"              newbie, basing your first .vimrc on this file is a good choice.
-"              If you're a more advanced user, building your own .vimrc based
-"              on this file is still a good idea.
- 
 "------------------------------------------------------------
 " Features {{{1
-"
-" These options and commands enable some very useful features in Vim, that
-" no user should have to live without.
  
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
@@ -23,13 +13,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'Chiel92/vim-autoformat'
-Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -53,8 +40,6 @@ nnoremap <F4> :NERDTreeToggle<CR>
 
 "------------------------------------------------------------
 " Must have options {{{1
-"
-" These are highly recommended options.
  
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
@@ -95,11 +80,6 @@ set hlsearch
  
 "------------------------------------------------------------
 " Usability options {{{1
-"
-" These are options that users frequently set in their .vimrc. Some of them
-" change Vim's behaviour in ways which deviate from the true Vi way, but
-" which are considered to add usability. Which, if any, of these options to
-" use is very much a personal preference, but they are harmless.
  
 " Use case insensitive search, except when using capital letters
 set ignorecase
@@ -155,8 +135,6 @@ set pastetoggle=<F11>
  
 "------------------------------------------------------------
 " Indentation options {{{1
-"
-" Indentation settings according to personal preference.
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
@@ -172,8 +150,6 @@ set expandtab
  
 "------------------------------------------------------------
 " Mappings {{{1
-"
-" Useful mappings
  
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
