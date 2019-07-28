@@ -9,6 +9,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 " ide-like visual/navigational features
+Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
