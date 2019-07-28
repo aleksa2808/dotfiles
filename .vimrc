@@ -22,6 +22,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 " easy bracketting
 Plug 'tpope/vim-surround'
+" . functionality for non-native commands
+Plug 'tpope/vim-repeat'
 
 " git diff sidebar indicators
 Plug 'airblade/vim-gitgutter'
