@@ -46,6 +46,7 @@ filetype indent plugin on
 syntax on
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 let g:ctrlp_show_hidden = 1
 let NERDTreeShowHidden=1
