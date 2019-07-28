@@ -13,7 +13,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 
-" tpope the man the legend
+" tpope the man the myth the legend
 " git wrapper
 Plug 'tpope/vim-fugitive'
 " easy code commenting
@@ -32,7 +32,7 @@ Plug 'vim-syntastic/syntastic'
 " easy code formatting
 Plug 'Chiel92/vim-autoformat'
 
-" i3wm config syntax highlighting! 
+" i3wm config syntax highlighting!
 Plug 'PotatoesMaster/i3-vim-syntax'
 
 call plug#end()
