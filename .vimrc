@@ -8,16 +8,32 @@ set nocompatible
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+" ide-like visual/navigational features
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+
+" tpope the man the legend
+" git wrapper
 Plug 'tpope/vim-fugitive'
+" easy code commenting
 Plug 'tpope/vim-commentary'
+" auto identify indent settings
+Plug 'tpope/vim-sleuth'
+" easy bracketting
+Plug 'tpope/vim-surround'
+
+" git diff sidebar indicators
 Plug 'airblade/vim-gitgutter'
+" better syntax highlighting
 Plug 'sheerun/vim-polyglot'
-Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'Chiel92/vim-autoformat'
+" code syntax linting
 Plug 'vim-syntastic/syntastic'
+" easy code formatting
+Plug 'Chiel92/vim-autoformat'
+
+" i3wm config syntax highlighting! 
+Plug 'PotatoesMaster/i3-vim-syntax'
 
 call plug#end()
 
