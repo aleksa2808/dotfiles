@@ -87,12 +87,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+        status_command i3status --config ~/.config/i3/i3status.conf
 	position top
-	font pango:DejaVu Sans Mono, Awesome 8
-        status_command i3status -c '~/.config/i3/i3status.conf'
+        separator_symbol "/"
+	font pango:DejaVu Sans Mono, Awesome 10
 }
 
 # User configs
+
+# Screen lock
+bindsym $mod+Shift+w exec "i3lock -c 000000"
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
@@ -107,10 +111,7 @@ bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
 exec --no-startup-id nitrogen --restore
 
 # Print screen
-bindsym --release Print exec gnome-screenshot --interactive
-
-# Enable printscreen tool window floating
-for_window [class="Gnome-screenshot"] floating enable
+bindsym Print exec gnome-screenshot -i
 
 # Launch compton
 exec --no-startup-id compton --config ~/.config/compton.conf -b
