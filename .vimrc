@@ -4,8 +4,15 @@
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
+
+" Better terminal window title
 set title
+
+" Let airline take care of mode indicators
 set noshowmode
+
+" Highlight searches while typing
+set incsearch
 
 " Faster response times
 " default 4000
