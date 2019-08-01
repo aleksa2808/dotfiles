@@ -21,6 +21,9 @@ set updatetime=300
 " Make splits more like i3
 set splitbelow
 
+" Set cursor scrolling offset
+set scrolloff=3
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
