@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:DejaVu Sans Mono 6
+font pango:DejaVu Sans Mono 8px
 
 floating_modifier $mod
 
@@ -90,7 +90,7 @@ bar {
         status_command i3status --config ~/.config/i3/i3status.local.conf
 	position top
         separator_symbol "/"
-	font pango:DejaVu Sans Mono, Awesome 8
+	font pango:DejaVu Sans Mono, Awesome 10px
 }
 
 # User configs
