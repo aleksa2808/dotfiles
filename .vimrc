@@ -18,6 +18,9 @@ set incsearch
 " default 4000
 set updatetime=300
 
+" Make splits more like i3
+set splitbelow
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -43,6 +46,10 @@ Plug 'tpope/vim-surround'
 " . functionality for non-native commands
 Plug 'tpope/vim-repeat'
 
+" code completion
+" needs additional install flags depending on the needed language
+" eg. './install --clang-completer' for C/C++
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 " program tag explorer
 Plug 'majutsushi/tagbar'
 " git diff sidebar indicators
@@ -50,9 +57,11 @@ Plug 'airblade/vim-gitgutter'
 " better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 " code syntax linting
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 " easy code formatting
 Plug 'Chiel92/vim-autoformat'
+" .h <> .cpp file switching
+Plug 'vim-scripts/a.vim'
 
 " i3wm config syntax highlighting!
 Plug 'PotatoesMaster/i3-vim-syntax'
@@ -90,6 +99,8 @@ let g:airline#extensions#tabline#enabled=1
 
 let g:ctrlp_show_hidden=1
 let NERDTreeShowHidden=1
+
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " close vim if only nerdtree remains
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
