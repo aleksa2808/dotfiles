@@ -24,6 +24,9 @@ set splitbelow
 " Set cursor scrolling offset
 set scrolloff=3
 
+" Easier relative movement
+set relativenumber
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
