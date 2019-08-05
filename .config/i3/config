@@ -95,6 +95,9 @@ bar {
 
 # User configs
 
+# Move workspace to another monitor
+bindsym $mod+x move workspace to output right
+
 # Screen lock
 bindsym $mod+Shift+w exec "i3lock -c 000000"
 
