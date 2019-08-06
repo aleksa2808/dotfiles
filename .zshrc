@@ -10,6 +10,8 @@ DEFAULT_USER=`whoami`
 
 # vim-like command line keybinds
 bindkey -v
+# enable backwards tab completion on Shift-TAB
+bindkey '^[[Z' reverse-menu-complete
 
 # make vim the default editor
 export VISUAL=vim
