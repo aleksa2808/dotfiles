@@ -10,8 +10,18 @@ DEFAULT_USER=`whoami`
 
 # vim-like command line keybinds
 bindkey -v
+
+# Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
+export KEYTIMEOUT=1
+
 # enable backwards tab completion on Shift-TAB
 bindkey '^[[Z' reverse-menu-complete
+
+# Beginning search with arrow keys
+bindkey "^[OA" up-line-or-beginning-search
+bindkey "^[OB" down-line-or-beginning-search
+bindkey -M vicmd "k" up-line-or-beginning-search
+bindkey -M vicmd "j" down-line-or-beginning-search
 
 # make vim the default editor
 export VISUAL=vim
