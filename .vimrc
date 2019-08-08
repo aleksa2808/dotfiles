@@ -104,8 +104,12 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 " let g:airline_theme='onedark'
 
+" show hidden files and folders by default
 let g:ctrlp_show_hidden=1
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden=1
+
+" open files/folders with a single click
+let g:NERDTreeMouseMode = 3
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 
