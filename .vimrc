@@ -24,6 +24,10 @@ set splitbelow
 " Set cursor scrolling offset
 set scrolloff=3
 
+" Create .swp files in a central directory
+" (can cause problems if enabled on a multi-user machine)
+set directory^=$HOME/.vim/swap//
+
 " Easier relative movement
 set relativenumber
 
