@@ -113,6 +113,10 @@ let g:NERDTreeMouseMode = 3
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 
+" open nerdtree at startup if no specific file was given
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " close vim if only nerdtree remains
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
